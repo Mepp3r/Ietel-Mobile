@@ -36,12 +36,16 @@ class CalculadoraPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Calculadora ",
+                        "Faça uma simulação do seu ",
                         style: titulo,
                       ),
                       Text(
-                        "Solar",
+                        "Gerador Solar",
                         style: palavraChave,
+                      ),
+                      Text(
+                        ":",
+                        style: titulo,
                       ),
                     ],
                   ),
@@ -113,7 +117,7 @@ class CalculadoraPage extends StatelessWidget {
                       cursorWidth: 1.5,
                       style: TextStyle(fontSize: 14, color: Colors.black),
                       decoration: InputDecoration(
-                        hintText: "Conta de Energia",
+                        hintText: "Valor gasto com a energia",
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(
                             color: Color(0xFF082b59),
@@ -161,7 +165,7 @@ class CalculadoraPage extends StatelessWidget {
                           ),
                         ),
                         child: const Text(
-                          "CALCULAR",
+                          "SIMULAR",
                           style: button,
                         ),
                         onPressed: () {
@@ -172,7 +176,6 @@ class CalculadoraPage extends StatelessWidget {
                     ),
                   ),
                 ),
-
 
 
               ],

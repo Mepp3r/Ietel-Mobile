@@ -13,3 +13,5 @@ const font = TextStyle(color: Colors.black);
 const resultadofont = TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w600);
 
 const resultadofontA = TextStyle(color: Colors.orange, fontSize: 16, fontWeight: FontWeight.w400);
+
+const contato = TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w900);

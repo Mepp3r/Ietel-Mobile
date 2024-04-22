@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'resultado.page.dart';
 import 'calculadora.page.dart';
+import 'cadastraManutencao.page.dart';
+import 'cadastraDataHorario.page.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -29,6 +31,8 @@ class App extends StatelessWidget {
       routes: {
         "/calculadora": (context) => const CalculadoraPage(),
         "/resultado": (context) => const ResultadoPage(),
+        "/cadastraManutencao": (context) => const CadastraManutencaoPage(),
+        "/agendamento": (context) => const CadastraDataHorarioPage(),
       },
       initialRoute: '/calculadora',
     );
