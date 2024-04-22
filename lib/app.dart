@@ -3,13 +3,15 @@ import 'resultado.page.dart';
 import 'calculadora.page.dart';
 import 'cadastraManutencao.page.dart';
 import 'cadastraDataHorario.page.dart';
+import 'login.page.dart';
+import 'contato.page.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp (
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: false,
@@ -33,8 +35,10 @@ class App extends StatelessWidget {
         "/resultado": (context) => const ResultadoPage(),
         "/cadastraManutencao": (context) => const CadastraManutencaoPage(),
         "/agendamento": (context) => const CadastraDataHorarioPage(),
+        "/login": (context) => const LoginPage(),
+        "/contato": (context) => ContatoPage(),
       },
-      initialRoute: '/calculadora',
+      initialRoute: '/login',
     );
   }
 }

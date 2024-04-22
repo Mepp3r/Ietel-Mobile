@@ -56,10 +56,9 @@ class CalculadoraPage extends StatelessWidget {
                   padding: EdgeInsets.only(
                     left: 15,
                     right: 15,
+                    top: 30
                   ),
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 15),
-                    child: TextField(
+                  child: TextField(
                       cursorColor: Color(0xFF082b59),
                       cursorWidth: 1.5,
                       style: TextStyle(fontSize: 14, color: Colors.black),
@@ -86,7 +85,6 @@ class CalculadoraPage extends StatelessWidget {
                       ),
                       keyboardType: TextInputType.text,
                     ),
-                  ),
                 ),
 
                 //Concessionaria
@@ -146,7 +144,7 @@ class CalculadoraPage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 15, right: 15, bottom: 32),
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 15),
+                    padding: const EdgeInsets.only(top: 30),
                     child: SizedBox(
                       width: 200,
                       height: 36,

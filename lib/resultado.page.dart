@@ -50,7 +50,7 @@ class ResultadoPage extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(15),
+                  padding: EdgeInsets.only(top: 30, right: 15, left: 15),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [

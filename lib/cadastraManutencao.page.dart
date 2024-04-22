@@ -53,7 +53,7 @@ class CadastraManutencaoPage extends StatelessWidget {
                   padding: EdgeInsets.only(
                     left: 15,
                     right: 15,
-                    top: 15
+                    top: 30
                   ),
                   child: TextField(
                     cursorColor: Color(0xFF082b59),
@@ -412,7 +412,7 @@ class CadastraManutencaoPage extends StatelessWidget {
                 //Botão
                 Padding(
                   padding:
-                      const EdgeInsets.only(left: 15, right: 15, bottom: 32),
+                      const EdgeInsets.only(top: 30, left: 15, right: 15, bottom: 32),
                   child: SizedBox(
                     width: 200,
                     height: 36,

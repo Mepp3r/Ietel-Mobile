@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
 import 'styles.dart';
 
-class CadastraDataHorarioPage extends StatelessWidget {
-  const CadastraDataHorarioPage({super.key});
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "IETEL Solar",
+          "IETEL SOLAR",
           style: ietelSolar,
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: const Color(0xFFF58934),
+        child: const Icon(Icons.add, color: Colors.white),
+        onPressed: () => Navigator.pushNamed(context, "/newuser"),
       ),
       backgroundColor: const Color(0xFF082b59),
       body: Center(
@@ -25,42 +30,32 @@ class CadastraDataHorarioPage extends StatelessWidget {
               ),
             ),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Padding(
-                  padding: EdgeInsets.only(top: 30),
+                Padding(
+                  padding: const EdgeInsets.only(top: 30),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        "Agendamento da ",
-                        style: titulo,
-                      ),
-                      Text(
-                        "Manutenção",
-                        style: palavraChave,
-                      ),
-                      Text(
-                        ":",
-                        style: titulo,
-                      ),
+                      Image.asset("images/logo_ietel.png"),
                     ],
                   ),
                 ),
 
-                //Data
+                //Email
                 const Padding(
                   padding: EdgeInsets.only(
                     left: 15,
                     right: 15,
-                    top: 30
+                    top: 30,
+                    bottom: 15,
                   ),
                   child: TextField(
-                    cursorColor:  Color(0xFF082b59),
+                    cursorColor: Color(0xFF082b59),
                     cursorWidth: 1.5,
                     style: TextStyle(fontSize: 14, color: Colors.black),
-                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(
-                      hintText: "Data",
+                      hintText: "Digite seu email",
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: Color(0xFF082b59),
@@ -80,24 +75,24 @@ class CadastraDataHorarioPage extends StatelessWidget {
                         ),
                       ),
                     ),
+                    keyboardType: TextInputType.emailAddress,
                   ),
                 ),
 
-                //Horário
+                //Senha
                 const Padding(
                   padding: EdgeInsets.only(
                     left: 15,
                     right: 15,
                     top: 15,
+                    bottom: 15,
                   ),
                   child: TextField(
                     cursorColor: Color(0xFF082b59),
                     cursorWidth: 1.5,
                     style: TextStyle(fontSize: 14, color: Colors.black),
-                    maxLength: 4,
                     decoration: InputDecoration(
-                      counterText: '',
-                      hintText: "Horário",
+                      hintText: "Digite sua senha",
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: Color(0xFF082b59),
@@ -118,14 +113,14 @@ class CadastraDataHorarioPage extends StatelessWidget {
                       ),
                     ),
                     keyboardType: TextInputType.text,
+                    obscureText: true,
                   ),
                 ),
 
-
                 //Botão
                 Padding(
-                  padding:
-                      const EdgeInsets.only(left: 15, right: 15, bottom: 32, top: 30),
+                  padding: const EdgeInsets.only(
+                      left: 15, right: 15, top: 15, bottom: 32),
                   child: SizedBox(
                     width: 200,
                     height: 36,
@@ -139,13 +134,13 @@ class CadastraDataHorarioPage extends StatelessWidget {
                         overlayColor: MaterialStateProperty.resolveWith<Color?>(
                           (Set<MaterialState> states) {
                             if (states.contains(MaterialState.hovered))
-                              return Color(0xFF082b59);
+                              return const Color(0xFF082b59);
                             return null;
                           },
                         ),
                       ),
                       child: const Text(
-                        "AGENDAR",
+                        "LOGAR",
                         style: button,
                       ),
                       onPressed: () {},
