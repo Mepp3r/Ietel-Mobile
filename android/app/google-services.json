@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "271234920509",
+    "project_id": "userlist-413f7",
+    "storage_bucket": "userlist-413f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271234920509:android:c6630ca6819b348886fa54",
+        "android_client_info": {
+          "package_name": "App.IETEL_Solar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoDVFBq_PaF7SghySagmQgBKq-9yh2Ens"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271234920509:android:eca23115ae84c5e286fa54",
+        "android_client_info": {
+          "package_name": "com.example.ietel_solar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoDVFBq_PaF7SghySagmQgBKq-9yh2Ens"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
